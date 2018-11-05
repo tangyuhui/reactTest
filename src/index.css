@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption, {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font-weight: normal;
+  font-family: -apple-system-font,Helvetica Neue,sans-serif;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+  border-radius: 10px;
+  background-color: #F8F8F8;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+  -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+.clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clear{
+  zoom:1;
+}
+button{
+  outline:none;
+}
+.back_img{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.margin{
+  margin: 0 auto;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+.center{
+  text-align: center;
+}
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+.text-right{
+  text-align: right;
+}
+@keyframes backOpacity{
+ 0%   { opacity: 1 }
+ 25%  { opacity: .5 }
+ 50%  { opacity: 1 }
+ 75%  { opacity: .5 }
+ 100% { opacity: 1 }
+}
+
+.animation_opactiy{
+  animation: backOpacity 2s ease-in-out infinite;
+}
+.f12{
+  font-size:12px;
+}
+.f14{
+font-size:14px;
+}
+.f15{
+  font-size:15px;
+}
+.f16{
+  font-size:16px;
+}
+.f20{
+  font-size:20px;
+}
+.f22{
+  font-size:22px;
+}
+.f16{
+font-size:16px;
+}
+.f35{
+  font-size:35px;
+}
+.f37{
+  font-size:37px;
+}
+ul,li{
+list-style:none
+}
+.mt-5{
+margin-top:5px;
+}
+.mt-10{
+margin-top:10px;
+}
+.mt-20{
+  margin-top:20px;
+}
+.ml-5{
+  margin-left:5px;
+}
+.ml-10{
+  margin-left:10px;
+}
+.ml-20{
+  margin-left:20px;
+}
+.mr-10{
+  margin-right:10px;
+}
+.mr-20{
+  margin-right:20px;
+}
+.pr-20{
+  padding-right:20px;
+}
+.pt-10{
+  padding-top:10px;
+}
+.p-15{
+  padding:15px;
+}
+.p-10{
+  padding:10px;
+}
+.bold{
+  font-weight: bold;
+}
+.is-danger{
+color:red;
+}
+.vertical-md{
+  vertical-align: middle;
+}
+.weui-btn:after{
+  border:none!important;
+}
+a:hover, a:visited, a:link, a:active,a {
+  text-decoration: none;
+  color: #444;
+}
+.c-333{
+  color:#333;
+}
+.c-666{
+  color:#666;
+}
+.c-999{
+  color:#999;
+}
+.c-purple{
+  color:#f171ae;
+}
+.bg-fff{
+  background:#fff;
+}
+.txt-ellipsis{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.no-bfc{
+  overflow: hidden;
+}
+body.dialog-open {
+  position: fixed;
+  width: 100%;
+}
+.zhnx-page{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.zhnx-page>.zhnx-wrapper{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.regular-radio{
+display: none;
+}
+.regular-radio + label {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 100%;
+  border: 1px solid #ccc;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+
+.regular-radio + label:after {
+  content: " ";
+  border-radius: 100%;
+  top: 5px;
+  left: 5px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+.regular-radio:checked + label:after {
+  background-color: #26a2ff;
+  border-color: #26a2ff;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}

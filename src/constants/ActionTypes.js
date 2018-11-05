@@ -1,0 +1,3 @@
+export const CHANGE_INPUT_VALUE = 'CHANGE_INPUT_VALUE'
+export const ADD_LIST_ITEM = 'ADD_LIST_ITEM'
+export const DELETE_ITEM = 'DELETE_ITEM'
